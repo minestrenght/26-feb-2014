@@ -1,0 +1,8 @@
+1) menu prgm to create n display link list.
+2) menu prgm to create link list n add , remove no.
+3) menu prgm to create stack with fn: push, pop n peek [find]
+4) menu prgm to create queue with fn: empty, add, delete, access front element n count elements
+5) display factorial series 0-8 [no user input]
+6) display prime no 0-200 [no user input]
+7) display nos 0-500 divisible by 5 n not by 2 n 3.
+
