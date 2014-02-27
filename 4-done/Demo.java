@@ -25,7 +25,7 @@ class Demo {
                     break;
                 case 2:
                     if (q.infos.length - 1 == q.rear) {
-                        out.println("Queue is full");
+                        out.println("Queue is full !");
                     } else {
                         out.print("Enter number to add: ");
                         if (-1 == q.front) {
@@ -37,7 +37,7 @@ class Demo {
                     break;
                 case 3:
                     if (-1 == q.front && -1 == q.rear) {
-                        out.println("Queue is empty");
+                        out.println("Queue is empty !");
                     } else {
                         out.printf("Deleted info: %s\n", q.infos[q.front]);
                         for (int i = q.front; q.rear >= i; i ++) {
@@ -48,9 +48,19 @@ class Demo {
                     }
                     break;
                 case 4:
-                    //
+                    if (-1 == q.front && -1 == q.rear) {
+                        out.println("Queue is empty !");
+                    } else {
+                        out.printf("First in queue is: %s\n", q.infos[q.front]);
+                    }
                     break;
-                case 5:break;
+                case 5:
+                    if (-1 != q.front) {
+                        out.printf("There are %s info(s) in queue.\n", (q.rear - q.front + 1));
+                    } else {
+                        out.println("There are 0 info in queue.");
+                    }
+                    break;
             }
             out.print("Wana quit [y/n] ? ");
         } while (!sc.next().equalsIgnoreCase("y"));
