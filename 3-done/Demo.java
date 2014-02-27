@@ -10,7 +10,8 @@ class Demo {
             out.println("\tMenu");
             out.println("1) Push");
             out.println("2) Pop");
-            out.println("3) Peek");
+            out.println("3) Display");
+            out.println("4) Peek");
             out.print("Enter choice 1-3: ");
             switch (sc.nextInt()) {
                 case 1:
@@ -31,6 +32,16 @@ class Demo {
                     }
                     break;
                 case 3:
+                    if (-1 == st.top) {
+                        out.println("Stack is empty !");
+                    } else {
+                        out.println("Stack elements are:");
+                        for (int i = 0; st.top >= i; i ++) {
+                            out.println(st.infos[i]);
+                        }
+                    }
+                    break;
+                case 4:
                     if (-1 == st.top) {
                         out.println("Stack empty !");
                     } else {
